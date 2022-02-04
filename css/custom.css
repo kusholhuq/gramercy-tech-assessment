@@ -1,0 +1,93 @@
+/* Write your CSS below */
+
+@font-face {
+  font-family: 'SharpSans-Black';
+  src: url('../assets_from_client/fonts/SharpSans-No1-Black.otf');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'SharpSans-Medium';
+  src: url('../assets_from_client/fonts/SharpSans-No1-Medium.otf');
+  font-weight: normal;
+}
+
+h1, h2 {
+  text-transform: uppercase;
+  color: white;
+  font-family:'SharpSans-Black';
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body {
+  font-family:"SharpSans-Medium";
+  background-image: url("../assets_from_client/assets/login-bg.jpg");
+  background-size: cover;
+}
+
+.sharp-sans-black {
+  font-family: "SharpSans-Black";
+}
+
+.form-group {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  margin: .7rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form > input {
+  background: white;
+  color: black;
+  border: none;
+  font-family: "SharpSans-Black";
+  margin: center;
+  text-transform: uppercase;
+  width: 8rem;
+  height: 3rem;
+  align-items: center;
+  margin: auto;
+}
+
+button {
+  background-color: rgb(255, 255, 255);
+  border: none;
+  padding: 3px 6px;
+  font-family: "SharpSans-Black";
+  text-transform: uppercase;
+}
+
+.form-group > input {
+  width: 60%;
+}
+
+.form-group > label {
+  color: rgb(255, 255, 255);
+}
+
+.banner {
+  width: 50%;
+  margin: 1rem auto;
+}
+
+.grey-background{
+  background: grey;
+  background-size: cover;
+}
+
+.register-form, .signin-form{
+  background-color:rgb(17, 17, 17);
+  border: solid rgb(90, 200, 225) 2px;
+  padding: 1rem;
+  width: 40vw;
+}
