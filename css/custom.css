@@ -18,16 +18,13 @@ h1, h2 {
   font-family:'SharpSans-Black';
 }
 
-.center {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 body {
   font-family:"SharpSans-Medium";
   background-image: url("../assets_from_client/assets/login-bg.jpg");
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .sharp-sans-black {
@@ -56,23 +53,30 @@ form > input {
   width: 8rem;
   height: 3rem;
   align-items: center;
-  margin: auto;
+  margin: 1rem auto;
 }
 
 button {
-  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, .65);
   border: none;
   padding: 3px 6px;
   font-family: "SharpSans-Black";
   text-transform: uppercase;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+
 }
 
 .form-group > input {
   width: 60%;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
 }
 
 .form-group > label {
   color: rgb(255, 255, 255);
+  margin-top: .5rem;
+  margin-bottom: .5rem;
 }
 
 .banner {
@@ -90,4 +94,25 @@ button {
   border: solid rgb(90, 200, 225) 2px;
   padding: 1rem;
   width: 40vw;
+}
+
+.active-tab {
+  color: white;
+  background-color:rgb(90, 200, 225);
+}
+
+h2::before {
+  width: 100%;
+  content: "";
+  height: 3rem;
+  display: block;
+  background-image: url(../assets_from_client/assets/WSJ_Horizontal.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 2rem;
+}
+
+img {
+  width: 50%;
 }
