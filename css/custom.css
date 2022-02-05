@@ -18,6 +18,10 @@ h1, h2 {
   font-family:'SharpSans-Black';
 }
 
+h2 {
+  margin-left: .75rem;
+}
+
 body {
   font-family:"SharpSans-Medium";
   background-image: url("../assets_from_client/assets/login-bg.jpg");
@@ -54,17 +58,18 @@ form > input {
   height: 3rem;
   align-items: center;
   margin: 1rem auto;
+  cursor: pointer;
 }
 
 button {
   background-color: rgba(255, 255, 255, .65);
   border: none;
-  padding: 3px 6px;
+  padding: 5px 15px;
   font-family: "SharpSans-Black";
   text-transform: uppercase;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
-
+  cursor: pointer;
 }
 
 .form-group > input {
@@ -91,14 +96,15 @@ button {
 
 .register-form, .signin-form{
   background-color:rgb(17, 17, 17);
-  border: solid rgb(90, 200, 225) 2px;
+  border: solid #5AC8E0 2px;
   padding: 1rem;
   width: 40vw;
 }
 
-.active-tab {
+.active {
   color: white;
-  background-color:rgb(90, 200, 225);
+  /* background-color:rgba(90, 200, 225, .9); */
+  background-color:#5AC8E0;
 }
 
 h2::before {
