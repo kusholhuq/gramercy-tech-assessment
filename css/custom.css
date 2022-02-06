@@ -19,7 +19,7 @@ h1, h2 {
 }
 
 h2 {
-  margin-left: .75rem;
+  margin-left: 1.75rem;
 }
 
 body {
@@ -31,9 +31,9 @@ body {
   align-items: center;
 }
 
-.sharp-sans-black {
+/* .sharp-sans-black {
   font-family: "SharpSans-Black";
-}
+} */
 
 .form-group {
   width: 95%;
@@ -82,22 +82,23 @@ button {
   color: rgb(255, 255, 255);
   margin-top: .5rem;
   margin-bottom: .5rem;
+  margin-left:1rem;
 }
 
-.banner {
+/* .banner {
   width: 50%;
   margin: 1rem auto;
-}
+} */
 
-.grey-background{
+/* .grey-background{
   background: grey;
   background-size: cover;
-}
+} */
 
 .register-form, .signin-form{
   border: solid #5AC8E0 2px;
   padding: 1rem;
-  width: 40vw;
+  width: 45vw;
   background-image: linear-gradient(155deg, rgb(17, 17, 17) 93%, #5AC8E0 93.1%);
 }
 
@@ -121,4 +122,30 @@ h2::before {
 
 img {
   width: 50%;
+}
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* Portrait */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
 }
