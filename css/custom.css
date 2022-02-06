@@ -1,21 +1,22 @@
 /* Write your CSS below */
 
 @font-face {
-  font-family: 'SharpSans-Black';
-  src: url('../assets_from_client/fonts/SharpSans-No1-Black.otf');
+  font-family: "SharpSans-Black";
+  src: url("../assets_from_client/fonts/SharpSans-No1-Black.otf");
   font-weight: normal;
 }
 
 @font-face {
-  font-family: 'SharpSans-Medium';
-  src: url('../assets_from_client/fonts/SharpSans-No1-Medium.otf');
+  font-family: "SharpSans-Medium";
+  src: url("../assets_from_client/fonts/SharpSans-No1-Medium.otf");
   font-weight: normal;
 }
 
-h1, h2 {
+h1,
+h2 {
   text-transform: uppercase;
   color: white;
-  font-family:'SharpSans-Black';
+  font-family: "SharpSans-Black";
 }
 
 h2 {
@@ -23,7 +24,7 @@ h2 {
 }
 
 body {
-  font-family:"SharpSans-Medium";
+  font-family: "SharpSans-Medium";
   background-image: url("../assets_from_client/assets/login-bg.jpg");
   background-size: cover;
   display: flex;
@@ -31,15 +32,11 @@ body {
   align-items: center;
 }
 
-/* .sharp-sans-black {
-  font-family: "SharpSans-Black";
-} */
-
 .form-group {
   width: 95%;
   display: flex;
   justify-content: space-between;
-  margin: .7rem;
+  margin: 0.7rem;
 }
 
 form {
@@ -62,7 +59,7 @@ form > input {
 }
 
 button {
-  background-color: rgba(255, 255, 255, .65);
+  background-color: rgba(255, 255, 255, 0.65);
   border: none;
   padding: 5px 15px;
   font-family: "SharpSans-Black";
@@ -74,38 +71,28 @@ button {
 
 .form-group > input {
   width: 65%;
-  padding-top: .5rem;
-  padding-bottom: .5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .form-group > label {
   color: rgb(255, 255, 255);
-  margin-top: .5rem;
-  margin-bottom: .5rem;
-  margin-left:1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-left: 1rem;
 }
 
-/* .banner {
-  width: 50%;
-  margin: 1rem auto;
-} */
-
-/* .grey-background{
-  background: grey;
-  background-size: cover;
-} */
-
-.register-form, .signin-form{
-  border: solid #5AC8E0 2px;
+.register-form,
+.signin-form {
+  border: solid #5ac8e0 2px;
   padding: 1rem;
   width: 45vw;
-  background-image: linear-gradient(155deg, rgb(17, 17, 17) 93%, #5AC8E0 93.1%);
+  background-image: linear-gradient(155deg, rgb(17, 17, 17) 93%, #5ac8e0 93.1%);
 }
 
 .active {
   color: white;
-  /* background-color:rgba(90, 200, 225, .9); */
-  background-color:#5AC8E0;
+  background-color: #5ac8e0;
 }
 
 h2::before {
@@ -125,27 +112,33 @@ img {
 }
 
 /* Portrait and Landscape */
-@media only screen
-  and (min-device-width: 375px)
-  and (max-device-width: 667px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
 }
 
 /* Portrait */
-@media only screen
-  and (min-device-width: 375px)
-  and (max-device-width: 667px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) {
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .form-group {
+    flex-direction: column;
+  }
 
+  .register-form,
+  .signin-form {
+    width: 85vw;
+  }
+
+  .form-group > input {
+    width: 95%;
+  }
+
+  .form-group > label {
+    margin-left: 0rem;
+  }
+
+  h2 {
+    margin-left: 0.75rem;
+  }
 }
 
 /* Landscape */
-@media only screen
-  and (min-device-width: 375px)
-  and (max-device-width: 667px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) {
-
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
 }
